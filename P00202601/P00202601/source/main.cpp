@@ -1,4 +1,5 @@
 #include "Prerequisites.h"
+#include "Inventory.h"
 
 
 class
@@ -29,7 +30,8 @@ public: //Esto define si la clase será publica o privada
 		setHealth(int health) {
 		m_health = health;
 	}
-
+	//Parte de la tarea de palabras reservadas (EQUIVOCADO)
+	/*
 	//This function checks if Pepe has a backpack equipped.
 	void
 		getInventory() {
@@ -56,7 +58,7 @@ public: //Esto define si la clase será publica o privada
 
 	//This function allows to Pepe collect objects
 	void
-		pickUpObject() {
+	pickUpObject() {
 		int yes_no;
 		while (hasInventory) {
 			std::cout << "¿Deseas recoger este objeto (1 - Si 2 - No)" << std::endl;
@@ -82,20 +84,25 @@ public: //Esto define si la clase será publica o privada
 			}
 		}
 	}
+	*/
 
 
 private:
 	bool isCharacterAlive = false;
-	bool hasInventory = false;
+	//Parte de la tarea de palabras reservadas (EQUIVOCADO)
+	//bool hasInventory = false;
 
 
 protected:
 	int m_health;
-	int m_backpackSlots;
+	//Parte de la tarea de palabras reservadas (EQUIVOCADO)
+	//int m_backpackSlots;
 };
 
 //This is in charge of being the entry point of the app
 int main() {
+	//Clase 1 creando primera clase (personaje)
+	/*
 	Character pepe(150);
 	pepe.getHealth();
 	std::cout << pepe.getHealth() << std::endl;
@@ -105,10 +112,25 @@ int main() {
 		std::cout << "El pepe murió." << std::endl;
 		pepe.rebirth();
 	}
+	*/
+
+	//Parte de la tarea palabras reservada (EQUIVOCADO)
+	/*
 	pepe.getInventory();
 	pepe.setBackpackSlots(3);
 	pepe.getInventory();
 	std::cout << " Slots disponibles en inventario " << pepe.getAvailableSlots() << std::endl;
 	pepe.pickUpObject();
+	*/
+
+	Inventory inventory;
+	inventory.addItem("Hierro crudo", 7);
+	inventory.addItem("Carne de rata", 4);
+	inventory.addItem("Pocion de fuerza", 3);
+
+	inventory.useItem("Pocion de fuerza", 1);
+	inventory.showInventory();
+
+	std::cin.get();
 	return 0;
 }
