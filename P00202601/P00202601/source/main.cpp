@@ -9,7 +9,7 @@ public: //Esto define si la clase será publica o privada
 	Character(int health) : m_health(health) {}
 
 
-
+	//This function respawns Pepe.
 	void
 		rebirth() {
 		if (!isCharacterAlive && m_health <= 0) {
@@ -18,16 +18,19 @@ public: //Esto define si la clase será publica o privada
 		}
 	}
 
+	//This function allows us know the status of Pepe´s health.
 	int
 		getHealth() const {
 		return m_health;
 	}
-
+	
+	//This function changes Pepe’s health.
 	void
 		setHealth(int health) {
 		m_health = health;
 	}
 
+	//This function checks if Pepe has a backpack equipped.
 	void
 		getInventory() {
 		if (!hasInventory) {
@@ -38,17 +41,20 @@ public: //Esto define si la clase será publica o privada
 		}
 	}
 
+	//With this function, we can find out how many slots Pepe has available.
 	int
 		getAvailableSlots() const {
 		return m_backpackSlots;
 	}
 
+	//This function assigns a backpack (inventory) to Pepe.
 	void
 		setBackpackSlots(int backpackSlots) {
 		m_backpackSlots = backpackSlots;
 		hasInventory = true;
 	}
 
+	//This function allows to Pepe collect objects
 	void
 		pickUpObject() {
 		int yes_no;
