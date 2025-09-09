@@ -1,9 +1,10 @@
 #include "Prerequisites.h"
 #include "Inventory.h"
+#include "Rectangle.h"
 
-
+                                                                                         
 class
-	Character {
+Character {
 public: //Esto define si la clase será publica o privada
 
 	Character() = default;
@@ -131,6 +132,29 @@ int main() {
 	inventory.useItem("Pocion de fuerza", 1);
 	inventory.showInventory();
 
-	std::cin.get();
+	Rectangle rectangle1(0, 0);
+	rectangle1.setLength(5);
+	rectangle1.setWidth(3);
+	std::cout << "The area is:" << rectangle1.calculateArea() << std::endl;
+	std::cout << "The perimeter is:" << rectangle1.calculatePerimeter() << std::endl;
+	
+	/*
+	//Ejercicio con mi logica
+	Date fecha;
+	std::cout << "Ingresa el dia:" <<	std::endl;
+	std::cin >> fecha.dd;
+	std::cout << "Ingresa el mes:" << std::endl;
+	std::cin >> fecha.mm;
+	std::cout << "Ingresa el año:" << std::endl;
+	std::cin >> fecha.yy;
+
+	std::cout << "Dia: " <<fecha.dd<< " Mes: " << fecha.mm << " Anio: " << fecha.yy << std::endl;
+	*/
+
+	//Ejercicio con la logica de clase
+	Fecha fecha;
+	fecha.getFecha();
+
+	//std::cin.get();
 	return 0;
 }
