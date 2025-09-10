@@ -32,5 +32,8 @@
     <ClInclude Include="include\Rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\Circle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

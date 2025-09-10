@@ -168,6 +168,7 @@
     <ClCompile Include="source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Circle.h" />
     <ClInclude Include="include\Inventory.h" />
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />

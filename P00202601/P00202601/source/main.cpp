@@ -1,6 +1,7 @@
 #include "Prerequisites.h"
 #include "Inventory.h"
 #include "Rectangle.h"
+#include "Circle.h"
 
                                                                                          
 class
@@ -154,6 +155,10 @@ int main() {
 	//Ejercicio con la logica de clase
 	Fecha fecha;
 	fecha.getFecha();
+
+	Circle miCirculo(4.8);
+	std::cout << "El area del circulo es: " << miCirculo.getArea() << std::endl;
+	std::cout << "El perimetro del circulo es: " << miCirculo.getPerimeter() << std::endl;
 
 	//std::cin.get();
 	return 0;
