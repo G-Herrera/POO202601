@@ -2,6 +2,7 @@
 #include "Inventory.h"
 #include "Rectangle.h"
 #include "Circle.h"
+#include "Estudiante.h"
 
                                                                                          
 class
@@ -160,6 +161,18 @@ int main() {
 	std::cout << "El area del circulo es: " << miCirculo.getArea() << std::endl;
 	std::cout << "El perimetro del circulo es: " << miCirculo.getPerimeter() << std::endl;
 
+
+	Estudiante estudiantes[5];
+
+	estudiantes[0].setEstudiante("Juan", 20);
+	estudiantes[1].setEstudiante("Maria", 22);
+	estudiantes[2].setEstudiante("Pedro", 19);
+	estudiantes[3].setEstudiante("Ana", 21);
+	estudiantes[4].setEstudiante("Luis", 23);
+
+	for(int i = 0; i < 5; i++) {
+		estudiantes[i].getInformacion();
+	}
 	//std::cin.get();
 	return 0;
 }
