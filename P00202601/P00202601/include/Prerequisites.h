@@ -17,12 +17,14 @@ Date {
 
 
 //Logica clase con copilot
-struct Fecha {
+struct 
+Fecha {
 	int dia;
 	int mes;
 	int anio;
 
-	void getFecha(){
+	void 
+	getFecha(){
 		time_t t = time(0);   // get time now
 		tm* now = localtime(&t);
 
@@ -33,7 +35,8 @@ struct Fecha {
 		std::cout << "Fecha actual: " << toString() << std::endl;
 	}
 
-	std::string toString() const {
+	std::string 
+	toString() const {
 		return std::to_string(dia) + "/" + std::to_string(mes) + "/" + std::to_string(anio);
 	}
 };

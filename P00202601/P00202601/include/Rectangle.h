@@ -9,12 +9,12 @@ public:
 	~Rectangle()=default;
 
 	void
-		setWidth(float width) {
+	setWidth(float width) {
 		m_width = width;
 	}
 
 	void
-		setLength(float length) {
+	setLength(float length) {
 		m_length = length;
 	}
 

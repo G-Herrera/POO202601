@@ -8,7 +8,7 @@ public:
 	~Estudiante()=default;
 
 	void 
-	setEstudiante(std::string nombre, int edad) {
+	setEstudiante(const std::string& nombre, int edad) {
 		m_nombre = nombre;
 		m_edad = edad;
 	};
