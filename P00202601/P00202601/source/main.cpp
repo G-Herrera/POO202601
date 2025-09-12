@@ -3,6 +3,7 @@
 #include "Rectangle.h"
 #include "Circle.h"
 #include "Estudiante.h"
+#include "CuentaBancaria.h"
 
                                                                                          
 class
@@ -173,6 +174,22 @@ int main() {
 	for(int i = 0; i < 5; i++) {
 		estudiantes[i].getInformacion();
 	}
+
+	//Aplicacion bancaria
+
+	CuentaBancaria cuenta1("Juan Perez", 123456);
+	CuentaBancaria cuenta2("Maria Gomez", 654321);
+
+	cuenta1.depositarFondos(1000);
+	cuenta1.retirarFondos(200);
+	cuenta1.consultarSaldo();
+
+	cuenta1.transferirFondos(cuenta2, 300);
+	cuenta2.consultarSaldo();
+
+	cuenta1.aplicarIntereses();
+	cuenta1.consultarSaldo();
+
 	//std::cin.get();
 	return 0;
 }
