@@ -41,5 +41,11 @@
     <ClInclude Include="include\CuentaBancaria.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\Banco.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UsuarioBanco.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

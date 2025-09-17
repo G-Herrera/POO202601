@@ -4,40 +4,35 @@
 class 
 CuentaBancaria {
 public:
-	CuentaBancaria(const std::string& titular, int numeroCuenta) : m_titular(titular), 
-	m_numeroCuenta(numeroCuenta), m_saldo(0.0) {};
+	CuentaBancaria() = default;
+	CuentaBancaria(std::string titular, int numeroCuenta, double saldoInicial) : 
+	m_titular(titular), m_numeroCuenta(numeroCuenta), m_saldo(saldoInicial) {};
 	~CuentaBancaria()=default;
 	std::string m_titular;
 
-	void 
-	consultarSaldo() const {
+	double& 
+	consultarSaldo(){
 		std::cout << "El saldo de la cuenta es: " << m_saldo << std::endl;
+		return m_saldo;
 	};
 
-	void 
-	depositarFondos(double cantidad) {
-		depositar(cantidad);
+	void
+		mostrarInteresCalculado() {
+		double tasaInteres = 5.0; //Tasa de interes del 5%
+		double interes = calcularIntereses(tasaInteres);
+		std::cout << "Interes calculado al " << tasaInteres << "% sobre el saldo de " <<
+			m_saldo << " es: " << interes << std::endl;
 	};
 
-	void 
-	retirarFondos(double cantidad) {
-		retirar(cantidad);
-	};
-
-	void 
-	transferirFondos(CuentaBancaria& cuentaDestino, double cantidad) {
-		transferir(cuentaDestino, cantidad);
-	};
-
-	void 
-	aplicarIntereses() {
-		calcularIntereses();
-	};
+	int
+	getNumeroCuenta() const {
+		return m_numeroCuenta;
+	}
 
 protected:
 	int m_numeroCuenta;
 
-	void 
+	/*void
 	depositar(double cantidad) {
 		if (cantidad > 0) {
 			m_saldo += cantidad;
@@ -59,15 +54,19 @@ protected:
 		else {
 			std::cout << "Cantidad de retiro inválida o saldo insuficiente." << std::endl;
 		}
-	};
+	};*/
 
+	//Transferir dinero a otra cuenta
 	void 
-	transferir(CuentaBancaria& cuentaDestino, double cantidad) {
-		if (cantidad > 0 && cantidad <= m_saldo) {
-			m_saldo -= cantidad;
+	transferir(CuentaBancaria& cuentaOrigen, CuentaBancaria& cuentaDestino, 
+	double cantidad, int noRef) {
+		if (cantidad > 0 && cantidad <= cuentaOrigen.m_saldo) {
+			cuentaOrigen.m_saldo -= cantidad;
 			cuentaDestino.m_saldo += cantidad;
-			std::cout << "Transferencia de " << cantidad << " realizada a la cuenta " 
-			<< cuentaDestino.m_numeroCuenta << ". Nuevo saldo: " << m_saldo << std::endl;
+			std::cout << "Transferencia de " << cantidad << " de la cuenta " << 
+			cuentaOrigen.m_numeroCuenta << " realizada a la cuenta "
+			<< cuentaDestino.m_numeroCuenta << " con exito. Numero de referencia " << 
+			noRef << std::endl;
 		}
 		else {
 			std::cout << "Cantidad de transferencia inválida o saldo insuficiente." 
@@ -78,12 +77,9 @@ protected:
 private:
 	double m_saldo;
 
-	void 
-	calcularIntereses() {
-		double interes = m_saldo * 0.05; // Suponiendo un interés del 5%
-		m_saldo += interes;
-		std::cout << "Intereses de " << interes << " calculados. Nuevo saldo: " 
-		<< m_saldo << std::endl;
+	double 
+	calcularIntereses(double tasaInteres) {
+		return (m_saldo * tasaInteres) / 100;
 	};
 };
 

@@ -3,7 +3,8 @@
 #include "Rectangle.h"
 #include "Circle.h"
 #include "Estudiante.h"
-#include "CuentaBancaria.h"
+#include "Banco.h"
+#include "UsuarioBanco.h"
 
                                                                                          
 class
@@ -176,19 +177,17 @@ int main() {
 	}
 
 	//Aplicacion bancaria
+	Banco Santander;
+	UsuarioBanco usuario1 = Santander.nuevoUsuario(CuentaBancaria("Alice", 1001, 5000.0));
+	UsuarioBanco usuario2 = Santander.nuevoUsuario(CuentaBancaria("Bob", 1002, 3000.0));
 
-	CuentaBancaria cuenta1("Juan Perez", 123456);
-	CuentaBancaria cuenta2("Maria Gomez", 654321);
+	std::cout << "Antes de la transferencia: " << std::endl;
 
-	cuenta1.depositarFondos(1000);
-	cuenta1.retirarFondos(200);
-	cuenta1.consultarSaldo();
+	std::cout << "Realizando la transferencia:" << std::endl;
 
-	cuenta1.transferirFondos(cuenta2, 300);
-	cuenta2.consultarSaldo();
+	Santander.realizarTransferencia(usuario1, usuario2, 1000.0, 12345);
 
-	cuenta1.aplicarIntereses();
-	cuenta1.consultarSaldo();
+	std::cout << "Despues de la transferencia: " << std::endl;
 
 	//std::cin.get();
 	return 0;
