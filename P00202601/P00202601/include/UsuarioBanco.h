@@ -2,9 +2,12 @@
 #include "Prerequisites.h"
 #include "CuentaBancaria.h"
 
+// Esta clase representa a un usuario del banco con una cuenta bancaria
+
 class 
 UsuarioBanco {
 public:
+	//Constructor que recibe una cuenta bancaria
 	UsuarioBanco(CuentaBancaria cuenta) {
 		m_cuenta = cuenta;
 		m_nombreUsuario = m_cuenta.m_titular;
@@ -14,10 +17,17 @@ public:
 	};
 	~UsuarioBanco()=default;
 
+	//Metodo para acceder a la cuenta bancaria protegida de la clase CuentaBancaria (base).
 	CuentaBancaria&
-	getCuenta() {
+		getCuenta() {
 		return m_cuenta;
-	}
+	};
+
+	//Metodo para agregar cashback despues de una compra
+	void
+	setCashback(double cantidad) {
+		m_cashBack += cantidad;
+	};
 
 private:
 	CuentaBancaria m_cuenta;

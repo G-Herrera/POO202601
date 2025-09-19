@@ -73,13 +73,15 @@ public: //Esto define si la clase será publica o privada
 			case 1:
 				std::cout << "El pepe ha recogido un objeto del suelo" << std::endl;
 				setBackpackSlots(getAvailableSlots() - 1);
-				std::cout << " Slots disponibles en inventario " << getAvailableSlots() << std::endl;
+				std::cout << " Slots disponibles en inventario " << getAvailableSlots() 
+				<< std::endl;
 				break;
 			case 2:
 				std::cout << "El pepe NO ha recogido un objeto del suelo" << std::endl;
 				break;
 			default:
-				std::cout << "OPCION INVALIDA INTENTA DE NUEVO CON 1(SI) O 2(NO)." << std::endl;
+				std::cout << "OPCION INVALIDA INTENTA DE NUEVO CON 1(SI) O 2(NO)." 
+				<< std::endl;
 				break;
 			}
 
@@ -124,7 +126,8 @@ int main() {
 	pepe.getInventory();
 	pepe.setBackpackSlots(3);
 	pepe.getInventory();
-	std::cout << " Slots disponibles en inventario " << pepe.getAvailableSlots() << std::endl;
+	std::cout << " Slots disponibles en inventario " << pepe.getAvailableSlots() 
+	<< std::endl;
 	pepe.pickUpObject();
 	*/
 
@@ -152,7 +155,8 @@ int main() {
 	std::cout << "Ingresa el año:" << std::endl;
 	std::cin >> fecha.yy;
 
-	std::cout << "Dia: " <<fecha.dd<< " Mes: " << fecha.mm << " Anio: " << fecha.yy << std::endl;
+	std::cout << "Dia: " <<fecha.dd<< " Mes: " << fecha.mm << " Anio: " 
+	<< fecha.yy << std::endl;
 	*/
 
 	//Ejercicio con la logica de clase
@@ -186,7 +190,7 @@ int main() {
 	std::cout << "Realizando la transferencia:" << std::endl;
 
 	Santander.realizarTransferencia(usuario1, usuario2, 1000.0, 12345);
-	Santander.compraConTarjeta(usuario2, 200.0);
+	Santander.compraConTarjeta(usuario1, "Laptop", 1500.0, 54321);
 	std::cout << "Despues de la transferencia: " << std::endl;
 
 	//std::cin.get();

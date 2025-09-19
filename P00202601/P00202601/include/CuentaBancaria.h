@@ -1,21 +1,27 @@
 #pragma once
 #include "Prerequisites.h"
 
+//Clase base que representa una cuenta bancaria con funcionalidades para consultar saldo, 
+//realizar transferencias y calcular intereses.
+
 class 
 CuentaBancaria {
 public:
+	//Constructores
 	CuentaBancaria() = default;
 	CuentaBancaria(std::string titular, int numeroCuenta, double saldoInicial) : 
 	m_titular(titular), m_numeroCuenta(numeroCuenta), m_saldo(saldoInicial) {};
 	~CuentaBancaria()=default;
 	std::string m_titular;
 
+	//Metodo para consultar el saldo de la cuenta
 	double& 
 	consultarSaldo(){
 		std::cout << "El saldo de la cuenta es: " << m_saldo << std::endl;
 		return m_saldo;
 	};
 
+	//Metodo para mostrar el interes calculado sobre el saldo actual
 	void
 		mostrarInteresCalculado() {
 		double tasaInteres = 5.0; //Tasa de interes del 5%
@@ -24,6 +30,7 @@ public:
 			m_saldo << " es: " << interes << std::endl;
 	};
 
+	//Metodo para obtener el numero de cuenta
 	int
 	getNumeroCuenta() const {
 		return m_numeroCuenta;
@@ -56,7 +63,7 @@ protected:
 		}
 	};*/
 
-	//Transferir dinero a otra cuenta
+	//Metodo para realizar transferencias entre cuentas
 	void 
 	transferir(CuentaBancaria& cuentaOrigen, CuentaBancaria& cuentaDestino, 
 	double cantidad, int noRef) {
@@ -77,6 +84,7 @@ protected:
 private:
 	double m_saldo;
 
+	//Metodo para calcular los intereses sobre el saldo actual
 	double 
 	calcularIntereses(double tasaInteres) {
 		return (m_saldo * tasaInteres) / 100;

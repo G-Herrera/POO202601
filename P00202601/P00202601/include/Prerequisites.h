@@ -40,3 +40,13 @@ Fecha {
 		return std::to_string(dia) + "/" + std::to_string(mes) + "/" + std::to_string(anio);
 	}
 };
+
+//Enum de comercios utilizado en la clase Banco para poder calcular el cashback 
+//segun el comercio
+enum
+TRADE {
+	TECNOLOGIA = 1,
+	RESTAURANTES = 2,
+	FARMACIAS = 3,
+	SUPERMERCADOS = 4
+};
