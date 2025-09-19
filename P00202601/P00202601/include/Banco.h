@@ -31,6 +31,21 @@ public:
 		}
 	}
 
+	//Metodo para hacer compras con tarjeta y regresar cashBack 1%
+	void 
+	compraConTarjeta(UsuarioBanco& usuario, double cantidad) {
+		if (cantidad > 0 && cantidad <= usuario.getCuenta().consultarSaldo()) {
+			usuario.getCuenta().consultarSaldo() -= cantidad;
+			double cashBack = cantidad * 0.01; //1% de cashBack
+			usuario.getCuenta().consultarSaldo() += cashBack;
+			std::cout << "Compra de " << cantidad << " realizada. CashBack de " << cashBack 
+			<< " aplicado. Nuevo saldo: " << usuario.getCuenta().consultarSaldo() << std::endl;
+		}
+		else {
+			std::cout << "Cantidad de compra inválida o saldo insuficiente." << std::endl;
+		}
+	}
+
 
 
 private:

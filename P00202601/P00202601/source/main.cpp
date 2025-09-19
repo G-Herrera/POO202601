@@ -186,7 +186,7 @@ int main() {
 	std::cout << "Realizando la transferencia:" << std::endl;
 
 	Santander.realizarTransferencia(usuario1, usuario2, 1000.0, 12345);
-
+	Santander.compraConTarjeta(usuario2, 200.0);
 	std::cout << "Despues de la transferencia: " << std::endl;
 
 	//std::cin.get();
