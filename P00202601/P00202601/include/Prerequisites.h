@@ -50,3 +50,12 @@ TRADE {
 	FARMACIAS = 3,
 	SUPERMERCADOS = 4
 };
+
+//Enum de categorias de productos utilizado en la clase Producto
+enum
+CATEGORIAPRODUCTO {
+	ALIMENTOS = 1,
+	ELECTRODOMESTICOS = 2,
+	ROPA = 3,
+	MISCELANEOS = 4
+};

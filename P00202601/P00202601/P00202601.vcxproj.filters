@@ -47,5 +47,8 @@
     <ClInclude Include="include\UsuarioBanco.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\Producto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -175,6 +175,7 @@
     <ClInclude Include="include\Inventory.h" />
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />
+    <ClInclude Include="include\Producto.h" />
     <ClInclude Include="include\Rectangle.h" />
     <ClInclude Include="include\UsuarioBanco.h" />
   </ItemGroup>
