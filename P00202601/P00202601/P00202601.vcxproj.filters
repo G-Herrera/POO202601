@@ -13,11 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="source\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <Filter Include="Header Files\ProgrammingPatterns">
+      <UniqueIdentifier>{9b56118a-182c-4103-b5e2-9c24ff6dcfa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ActividadesEnClase">
+      <UniqueIdentifier>{56d25dfc-d08b-413f-b520-d858b37a1300}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -50,5 +51,16 @@
     <ClInclude Include="include\Producto.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h">
+      <Filter>Header Files\ProgrammingPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\RegistrosDeActividades.h">
+      <Filter>Header Files\ActividadesEnClase</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
