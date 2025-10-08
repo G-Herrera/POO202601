@@ -173,8 +173,10 @@
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />
     <ClInclude Include="include\Producto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h" />
     <ClInclude Include="include\ProgrammingPatterns\RegistrosDeActividades.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Vehiculo.h" />
     <ClInclude Include="include\Rectangle.h" />
     <ClInclude Include="include\UsuarioBanco.h" />
   </ItemGroup>

@@ -1,6 +1,8 @@
 #include "Prerequisites.h"
 #include "ProgrammingPatterns/MiSingleton.h"
 #include "ProgrammingPatterns/RegistrosDeActividades.h"
+#include "ProgrammingPatterns/FactoryMethod.h"
+#include "ProgrammingPatterns/Vehiculo.h"
 
 //Inicializacion del puntero estatico a la instancia
 MiSingleton* MiSingleton::instancia = nullptr;
@@ -29,6 +31,36 @@ int main() {
 	for (const auto& actividad : registro2->getActividades()) {
 		std::cout << actividad << std::endl;
 	}
+
+	//Ejercicio Factory Method}
+	Fabrica* fabrica = new FabricaA(); //Fabrica --> Genera  a Tesla (fabricaA)}
+	Producto* producto = fabrica -> crearProducto(); //Producto --> Tesla (ProductoA)
+	producto->operacion();
+
+	delete producto;
+	delete fabrica;
+
+	//Ejercicio Patron de Diseño Factory Method con Vehiculos
+	std::cout << "Patron de Diseño Factory Method con Vehiculos" << std::endl;
+	std::cout << "Creando instancia de coche.." << std::endl;
+	FactoriaVehiculos* factoriaCoches = new FactoriaCoches();
+	Vehiculo* coche = factoriaCoches->crearVehiculo();
+	coche->descripcion();
+
+	std::cout << "Creando instancia de bicicleta.." << std::endl;
+	FactoriaVehiculos* factoriaBicicletas = new FactoriaBicicletas();
+	Vehiculo* bicicleta = factoriaBicicletas->crearVehiculo();
+	bicicleta->descripcion();
+
+	std::cout << "Mostrando el vehiculo abstracto" << std::endl;
+	Vehiculo* vehiculo = new Vehiculo();
+	vehiculo->descripcion();
+
+	delete coche;
+	delete factoriaCoches;
+	delete bicicleta;
+	delete factoriaBicicletas;
+	delete vehiculo;
 
 	return 0;
 }

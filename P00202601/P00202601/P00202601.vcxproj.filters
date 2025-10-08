@@ -57,6 +57,12 @@
     <ClInclude Include="include\ProgrammingPatterns\RegistrosDeActividades.h">
       <Filter>Header Files\ActividadesEnClase</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h">
+      <Filter>Header Files\ProgrammingPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Vehiculo.h">
+      <Filter>Header Files\ActividadesEnClase</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
