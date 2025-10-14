@@ -1,5 +1,6 @@
 #include "Prerequisites.h"
 #include "ProgrammingPatterns/AbstractFactory/FabricaConcreta.h"
+#include "ProgrammingPatterns/AbstractFactory/FactoriaMueblesRusticos.h"
 
 int main() {
 	FabricaAbstracta* fabrica = new FabricaConcreta();
@@ -12,5 +13,19 @@ int main() {
 	delete fabrica;
 	delete productoA;
 	delete productoB;
+
+	FactoriaMueble* factoriaMueblesRusticos = new FactoriaMueblesRusticos();
+	Mesa* mesa = factoriaMueblesRusticos->crearMesa();
+	Silla* silla = factoriaMueblesRusticos->crearSilla();
+
+	mesa->descripcion();
+	mesa->color("amarilla");
+	silla->descripcion();
+	silla->color("negra");
+
+	delete factoriaMueblesRusticos;
+	delete mesa;
+	delete silla;
+
 	return 0;
 }

@@ -173,12 +173,18 @@
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />
     <ClInclude Include="include\Producto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMueblesModernos.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaAbstracta.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaConcreta.h" />
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMueble.h" />
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMueblesRusticos.h" />
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\Mesa.h" />
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\Mueble.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoA.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoB.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoConcretoA.h" />
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoConcretoB.h" />
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\Silla.h" />
     <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h" />
     <ClInclude Include="include\ProgrammingPatterns\RegistrosDeActividades.h" />
@@ -188,8 +194,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp" />
+    <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\Mesa.cpp" />
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoConcretoA.cpp" />
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoConcretoB.cpp" />
+    <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\Silla.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

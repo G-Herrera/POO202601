@@ -28,6 +28,12 @@
     <Filter Include="Source Files\ProgrammingPatterns\AbstractFactory">
       <UniqueIdentifier>{b87545db-3426-4074-9760-b5d94a62df29}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\AbstractFactoryActivity">
+      <UniqueIdentifier>{453b6b57-c358-4629-9bc4-f22e546f8845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ProgrammingPatterns\AbstractFactoryActivity">
+      <UniqueIdentifier>{20f7cb1b-9bb3-43af-89ca-f8a2452b1fa2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -90,6 +96,24 @@
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaConcreta.h">
       <Filter>Header Files\ProgrammingPatterns\AbstractFactory</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMueble.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactoryActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\Mueble.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactoryActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\Silla.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactoryActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\Mesa.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactoryActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMueblesRusticos.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactoryActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMueblesModernos.h">
+      <Filter>Header Files\ProgrammingPatterns\AbstractFactoryActivity</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -100,6 +124,12 @@
     </ClCompile>
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoConcretoB.cpp">
       <Filter>Source Files\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\Mesa.cpp">
+      <Filter>Source Files\ProgrammingPatterns\AbstractFactoryActivity</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\Silla.cpp">
+      <Filter>Source Files\ProgrammingPatterns\AbstractFactoryActivity</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
