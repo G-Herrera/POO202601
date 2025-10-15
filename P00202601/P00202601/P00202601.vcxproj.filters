@@ -34,6 +34,12 @@
     <Filter Include="Source Files\ProgrammingPatterns\AbstractFactoryActivity">
       <UniqueIdentifier>{20f7cb1b-9bb3-43af-89ca-f8a2452b1fa2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Builder">
+      <UniqueIdentifier>{ec3dfebc-ef7c-49a5-9cc8-6a6386ffd0bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ProgrammingPatterns\Builder">
+      <UniqueIdentifier>{fa1299f2-7654-4361-89d9-6c7311880791}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -114,6 +120,18 @@
     <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FactoriaMueblesModernos.h">
       <Filter>Header Files\ProgrammingPatterns\AbstractFactoryActivity</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Producto.h">
+      <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Builder.h">
+      <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderConcreto.h">
+      <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Director.h">
+      <Filter>Header Files\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -130,6 +148,9 @@
     </ClCompile>
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\Silla.cpp">
       <Filter>Source Files\ProgrammingPatterns\AbstractFactoryActivity</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\Builder\BuilderConcreto.cpp">
+      <Filter>Source Files\ProgrammingPatterns\Builder</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
