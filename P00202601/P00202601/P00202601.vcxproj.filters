@@ -195,6 +195,15 @@
     <ClInclude Include="include\ProgrammingPatterns\Adapter\CuadradoAdapter.h">
       <Filter>Header Files\ProgrammingPatterns\Adapter</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoPrototype.h">
+      <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoTexto.h">
+      <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoImagen.h">
+      <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">

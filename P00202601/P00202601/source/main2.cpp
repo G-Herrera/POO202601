@@ -1,47 +1,12 @@
 #include "Prerequisites.h"
-/*
 #include "ProgrammingPatterns/Prototype/Prototype.h"
 #include "ProgrammingPatterns/Prototype/PrototypeConcreto.h"
-*/
-#include "ProgrammingPatterns/Adapter/InterfazNueva.h"
-#include "ProgrammingPatterns/Adapter/InterfazVieja.h"
-#include "ProgrammingPatterns/Adapter/Adaptador.h"
-#include "ProgrammingPatterns/Adapter/Circulo.h"
-#include "ProgrammingPatterns/Adapter/CirculoAdapter.h"
-#include "ProgrammingPatterns/Adapter/Cuadrado.h"
-#include "ProgrammingPatterns/Adapter/CuadradoAdapter.h"
-#include "ProgrammingPatterns/Adapter/Dibujable.h"
+#include "ProgrammingPatterns/Prototype/DocumentoPrototype.h"
+#include "ProgrammingPatterns/Prototype/DocumentoTexto.h"
+#include "ProgrammingPatterns/Prototype/DocumentoImagen.h"
 
 int main() {
-	//Crear una instancia de la interfaz vieja
-	InterfazVieja* objetoViejo = new InterfazVieja();
-	InterfazNueva* objetoNuevo = new Adaptador(objetoViejo);
 
-	//Usar el objeto nuevo que adapta el objeto viejo
-	objetoNuevo->metodoNuevo();
-
-	//Liberar memoria
-	delete objetoNuevo;
-	delete objetoViejo;
-	
-	//Actividad de Adapter con formas: circulo y cuadrado
-	Circulo* circulo = new Circulo(); //Esto es como si fuera la clase vieja
-	Cuadrado* cuadrado = new Cuadrado(); //Esto es como si fuera la clase vieja
-	Dibujable* circuloAdaptado = new CirculoAdapter(circulo); //Adaptador del circulo
-	Dibujable* cuadradoAdaptado = new CuadradoAdapter(cuadrado); //Adaptador del cuadrado
-
-	//Usar los objetos adaptados
-	circuloAdaptado->dibujar();
-	cuadradoAdaptado->dibujar();
-
-	//Liberar memoria
-	delete circuloAdaptado;
-	delete cuadradoAdaptado;
-	delete circulo;
-	delete cuadrado;
-
-
-	/*
 	Prototype* prototipo = new PrototypeConcreto();
 	prototipo->config("Ejemplo");
 	
@@ -53,7 +18,33 @@ int main() {
 
 	delete prototipo;
 	delete copia;
-	*/
+
+	//Documento Prototype
+	//Crear instancia de DocumentoTexto
+	DocumentoPrototype* docTexto = new DocumentoTexto();
+	docTexto->configurar("Contenido del documento de texto");
+
+	//Crear instancia de DocumentoImagen
+	DocumentoPrototype* docImagen = new DocumentoImagen();
+	docImagen->configurar("Contenido del documento de imagen");
+
+	//Clonar los documentos
+	DocumentoPrototype* docTextoCopia = docTexto->clone();
+	DocumentoPrototype* docImagenCopia = docImagen->clone();
+	docTextoCopia->configurar("Copia del contenido del documento de texto");
+	docImagenCopia->configurar("Copia del contenido del documento de imagen");
+	
+	//Mostrar los documentos originales y las copias
+	docTexto->mostrar();
+	docTextoCopia->mostrar();
+	docImagen->mostrar();
+	docImagenCopia->mostrar();
+
+	//Liberar memoria
+	delete docTexto;
+	delete docImagen;
+	delete docTextoCopia;
+	delete docImagenCopia;
 
 
 	return 0;
