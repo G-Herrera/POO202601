@@ -1,30 +1,28 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/Composite/Composite.h"
-#include "ProgrammingPatterns/Composite/Hoja.h"
+#include "ProgrammingPatterns/Decorator/ComponenteConcreto.h"
+#include "ProgrammingPatterns/Decorator/DecoradorConcretoA.h"
+#include "ProgrammingPatterns/Decorator/DecoradorConcretoB.h"
 
 int main() {
-	// Crear componentes hoja
-	//El patrón Composite permite tratar objetos individuales y compuestos de manera uniforme. Funciona de la siguiente manera:
-	// 1. Componente: Define la interfaz común para todos los objetos en la composición.
-	// 2. Hoja: Representa los objetos individuales en la composición. Implementa la interfaz del Componente.
-	// 3. Compuesto (Composite): Representa los objetos compuestos que pueden contener otros componentes (hojas o compuestos). 
-	// Implementa la interfaz del Componente y delega las operaciones a sus hijos.
-	// 4. Cliente: Interactúa con los objetos a través de la interfaz del Componente, sin preocuparse por si son hojas o compuestos.
-	// Esto permite construir estructuras de objetos en forma de árbol y tratarlos de manera uniforme.
-	Hoja* hoja1 = new Hoja();
-	Hoja* hoja2 = new Hoja();
-	Composite* composite = new Composite();
+	//Uso del patron Decorator
+	//El siguiente patrn permite agregar responsabilidades adicionales a un objeto de manera dinámica. Funciona de la siguiente manera:
+	// 1. Se define una interfaz o clase abstracta (Componente) que declara un método (operacion).
+	// 2. Se crean clases concretas (ComponenteConcreto) que implementan la interfaz.
+	// 3. Se crea una clase base Decorator que implementa la misma interfaz y contiene una referencia a un objeto Componente.
+	// 4. Se crean clases concretas de decoradores (DecoradorConcretoA, DecoradorConcretoB) 
+	// que extienden la funcionalidad del componente al agregar comportamiento antes o despues de delegar la operacion al componente envuelto.
+	// 5. En tiempo de ejecucion, se pueden envolver objetos Componente con uno o mas decoradores para agregar funcionalidades adicionales de manera flexible.
+	// Esto permite combinar diferentes decoradores para crear objetos con comportamientos personalizados sin modificar las clases originales.
+	ComponenteConcreto* componente = new ComponenteConcreto();
+	DecoradorConcretoA* decoradorA = new DecoradorConcretoA(componente);
+	DecoradorConcretoB* decoradorB = new DecoradorConcretoB(decoradorA);
 
-	composite->add(hoja1);
-	composite->add(hoja2);
-	composite->operacion();
+	componente->operacion();
+	decoradorA->operacion();
+	decoradorB->operacion();
 
-	// Liberar memoria
-	delete hoja1;
-	delete hoja2;
-	delete composite;
-	
-
-
+	delete componente;
+	delete decoradorA;
+	delete decoradorB;
 	return 0;
 }
