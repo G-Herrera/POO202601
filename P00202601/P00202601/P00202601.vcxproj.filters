@@ -49,6 +49,12 @@
     <Filter Include="Header Files\ProgrammingPatterns\Adapter">
       <UniqueIdentifier>{b8acb4b3-a676-4d57-83d9-21bb383e22ea}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Composite">
+      <UniqueIdentifier>{336b7c1d-cd3e-4872-abad-2c5a488ad071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Decorator">
+      <UniqueIdentifier>{92e3d3fe-582c-45df-9808-418cd876e7f1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -203,6 +209,27 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoImagen.h">
       <Filter>Header Files\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Composite.h">
+      <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Hoja.h">
+      <Filter>Header Files\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Componente.h">
+      <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\ComponenteConcreto.h">
+      <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Decorator.h">
+      <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoradorConcretoA.h">
+      <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoradorConcretoB.h">
+      <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
