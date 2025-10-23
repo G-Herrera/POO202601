@@ -55,6 +55,9 @@
     <Filter Include="Header Files\ProgrammingPatterns\Decorator">
       <UniqueIdentifier>{92e3d3fe-582c-45df-9808-418cd876e7f1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\DecoratorActivity">
+      <UniqueIdentifier>{432c6561-4ab0-470f-b8c9-89c806c71ec1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -230,6 +233,21 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoradorConcretoB.h">
       <Filter>Header Files\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Cafeteria.h">
+      <Filter>Header Files\ProgrammingPatterns\DecoratorActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\CafeteriaConcreta.h">
+      <Filter>Header Files\ProgrammingPatterns\DecoratorActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Condimento.h">
+      <Filter>Header Files\ProgrammingPatterns\DecoratorActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Leche.h">
+      <Filter>Header Files\ProgrammingPatterns\DecoratorActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Azucar.h">
+      <Filter>Header Files\ProgrammingPatterns\DecoratorActivity</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -2,6 +2,9 @@
 #include "ProgrammingPatterns/Decorator/ComponenteConcreto.h"
 #include "ProgrammingPatterns/Decorator/DecoradorConcretoA.h"
 #include "ProgrammingPatterns/Decorator/DecoradorConcretoB.h"
+#include "ProgrammingPatterns/Decorator/CafeteriaConcreta.h"
+#include "ProgrammingPatterns/Decorator/Leche.h"
+#include "ProgrammingPatterns/Decorator/Azucar.h"
 
 int main() {
 	//Uso del patron Decorator
@@ -24,5 +27,20 @@ int main() {
 	delete componente;
 	delete decoradorA;
 	delete decoradorB;
+
+	//Uso del patron Decorator en un ejemplo de cafeteria
+	//Creando instancias de cafeteria y agregando condimentos
+	CafeteriaConcreta* cafeteria = new CafeteriaConcreta();
+	Leche* cafeConLeche = new Leche(cafeteria);
+	Azucar* cafeconAzucar = new Azucar(cafeteria);
+
+	cafeteria->prepararCafe();
+	cafeConLeche->prepararCafe();
+	cafeconAzucar->prepararCafe();
+
+	delete cafeteria;
+	delete cafeConLeche;
+	delete cafeconAzucar;
+
 	return 0;
 }
