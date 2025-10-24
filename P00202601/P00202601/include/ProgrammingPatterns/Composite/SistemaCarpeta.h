@@ -6,6 +6,7 @@
 class 
 SistemaCarpeta : public Carpeta, public Sistema {
 public:
+	SistemaCarpeta(const std::string& _nombre) : nombreCarpeta(_nombre) {}
 	SistemaCarpeta()  = default;
 	~SistemaCarpeta() = default;
 
@@ -16,8 +17,7 @@ public:
 
 	void 
 	mostrarInfo() override {
-		Carpeta::mostrarInfo(); //llamar al metodo base de Carpeta
-		std::cout << "Sistema de Carpeta: " << std::endl;
+		std::cout << "Sistema de Carpeta: " << nombreCarpeta << std::endl;
 		for (auto& sistema : sistemas) {
 			sistema->mostrarInfo(); //delegar la muestra de informacion a los elementos hijos
 		}
@@ -26,5 +26,6 @@ public:
 
 
 private:
+	std::string nombreCarpeta = "NuevaCarpeta";
 	std::vector<Sistema*> sistemas;
 };

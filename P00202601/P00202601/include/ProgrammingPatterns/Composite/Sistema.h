@@ -8,5 +8,5 @@ public:
 	~Sistema() = default;
 
 	virtual void 
-	mostrarInfo() = 0;//metod puro para mostrar informacion del sistema
+	mostrarInfo() = 0;//metodo puro para mostrar informacion del sistema
 };

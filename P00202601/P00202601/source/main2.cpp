@@ -5,17 +5,17 @@
 
 
 int main() {
-	SistemaArchivo* archivo1 = new SistemaArchivo("documento1.txt");
-	SistemaArchivo* archivo2 = new SistemaArchivo("imagen1.png");
-	SistemaCarpeta* carpeta1 = new SistemaCarpeta();
-	carpeta1->agregarSistema(archivo1);
-	carpeta1->agregarSistema(archivo2);
+	SistemaCarpeta* raiz = new SistemaCarpeta("Raiz");
+	raiz->agregarSistema(new SistemaArchivo("Archivo1.docs"));
+	raiz->agregarSistema(new SistemaArchivo("Archivo2.docs"));
 
-	carpeta1->mostrarInfo();
+	SistemaCarpeta* subCarpeta = new SistemaCarpeta("SubCarpeta1");
+	subCarpeta->agregarSistema(new SistemaArchivo("Archivo3.docs"));
+	raiz->agregarSistema(subCarpeta);
+	raiz->mostrarInfo();
 
-	delete archivo1;
-	delete archivo2;
-	delete carpeta1;
+	delete raiz;
+	delete subCarpeta;
 
 	return 0;
 }
