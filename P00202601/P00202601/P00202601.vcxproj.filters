@@ -58,6 +58,9 @@
     <Filter Include="Header Files\ProgrammingPatterns\DecoratorActivity">
       <UniqueIdentifier>{432c6561-4ab0-470f-b8c9-89c806c71ec1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\CompositeActivity">
+      <UniqueIdentifier>{0a2aaa79-9d98-4df6-8a7f-942fd9f99b36}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -248,6 +251,21 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Decorator\Azucar.h">
       <Filter>Header Files\ProgrammingPatterns\DecoratorActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Archivo.h">
+      <Filter>Header Files\ProgrammingPatterns\CompositeActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Carpeta.h">
+      <Filter>Header Files\ProgrammingPatterns\CompositeActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Sistema.h">
+      <Filter>Header Files\ProgrammingPatterns\CompositeActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\SistemaArchivo.h">
+      <Filter>Header Files\ProgrammingPatterns\CompositeActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\SistemaCarpeta.h">
+      <Filter>Header Files\ProgrammingPatterns\CompositeActivity</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
