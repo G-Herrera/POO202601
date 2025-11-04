@@ -169,7 +169,13 @@
     <ClInclude Include="include\Circle.h" />
     <ClInclude Include="include\CuentaBancaria.h" />
     <ClInclude Include="include\Estudiante.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\Mensaje.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\MensajeApp.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\NotificacionPantalla.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\NotificacionSonido.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\NotificacionVibracion.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\Observer.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\ObserverMessage.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\SensorTemperatura.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\TermometroDigital.h" />
     <ClInclude Include="include\Inventory.h" />
