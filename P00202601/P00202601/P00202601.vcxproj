@@ -204,9 +204,13 @@
     <ClInclude Include="include\ProgrammingPatterns\Adapter\InterfazVieja.h" />
     <ClInclude Include="include\ProgrammingPatterns\Bridge\Abstraccion.h" />
     <ClInclude Include="include\ProgrammingPatterns\Bridge\AbstraccionRefinada.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\ControlRemoto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Dispositivo.h" />
     <ClInclude Include="include\ProgrammingPatterns\Bridge\ImplementacionConcretaA.h" />
     <ClInclude Include="include\ProgrammingPatterns\Bridge\Implementacion.h" />
     <ClInclude Include="include\ProgrammingPatterns\Bridge\ImplementacionConcretaB.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Radio.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\TV.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Builder.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderConcreto.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderPizzaClase\BuilderPizza.h" />

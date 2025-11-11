@@ -339,6 +339,18 @@
     <ClInclude Include="include\ProgrammingPatterns\Bridge\AbstraccionRefinada.h">
       <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Dispositivo.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\TV.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Radio.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\ControlRemoto.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
