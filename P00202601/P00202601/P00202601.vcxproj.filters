@@ -70,6 +70,9 @@
     <Filter Include="Header Files\GameProgrammingPatterns\Observer">
       <UniqueIdentifier>{7c5a81e6-e0e2-43d6-99b2-f14d8b044f0a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ProgrammingPatterns\Bridge">
+      <UniqueIdentifier>{a6fbe9d7-d7b9-4da5-8938-67aa8243ac7f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -293,6 +296,48 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Observer\TermometroDigital.h">
       <Filter>Header Files\GameProgrammingPatterns\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\Mensaje.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\MensajeApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\NotificacionPantalla.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\NotificacionSonido.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\NotificacionVibracion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Observer\ObserverMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Imagen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\InterfazImagen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\ProxyImagen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Implementacion.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\ImplementacionConcretaA.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\ImplementacionConcretaB.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Abstraccion.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\AbstraccionRefinada.h">
+      <Filter>Header Files\ProgrammingPatterns\Bridge</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
