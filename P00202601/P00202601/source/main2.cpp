@@ -1,22 +1,26 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/Bridge/ControlRemoto.h"
-#include "ProgrammingPatterns/Bridge/TV.h"
-#include "ProgrammingPatterns/Bridge/Radio.h"
+#include "ProgrammingPatterns/ChainOfResponsability/ManejadorConcretoA.h"
+#include "ProgrammingPatterns/ChainOfResponsability/ManejadorConcretoB.h"
+#include "ProgrammingPatterns/ChainOfResponsability/ManejadorConcretoC.h"
+
 
 
 int main() {
-	
-	TV tv;
-	Radio radio;
+	// Crear la cadena de manejadores
+	// ManejadorConcretoC es el último en la cadena, por lo que no tiene siguiente manejador, 
+	// este debe ser primero porque la cadena se crea de atrás hacia adelante
 
-	ControlRemoto controlRemotoTV(&tv);
-	ControlRemoto controlRemotoRadio(&radio);
+	ManejadorConcretoC manejadorC(nullptr);
+	ManejadorConcretoB manejadorB(&manejadorC);
+	ManejadorConcretoA manejadorA(&manejadorB);
 
-	controlRemotoTV.encenderDispositivo();
-	controlRemotoTV.apagarDispositivo();
+	// Peticiones a manejar
+	int peticiones[] = { 5, 15, 25, 8, 18, 30 };
+	for (int peticion : peticiones) {
+		manejadorA.manejarPeticion(peticion);
+	}
 
-	controlRemotoRadio.encenderDispositivo();
-	controlRemotoRadio.apagarDispositivo();
+
 
 	return 0;
 }

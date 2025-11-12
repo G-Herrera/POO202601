@@ -223,6 +223,10 @@
     <ClInclude Include="include\ProgrammingPatterns\Builder\DirectorPizza.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Pizza.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Producto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\Manejador.h" />
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoA.h" />
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoB.h" />
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoC.h" />
     <ClInclude Include="include\ProgrammingPatterns\Composite\Archivo.h" />
     <ClInclude Include="include\ProgrammingPatterns\Composite\Carpeta.h" />
     <ClInclude Include="include\ProgrammingPatterns\Composite\Composite.h" />
