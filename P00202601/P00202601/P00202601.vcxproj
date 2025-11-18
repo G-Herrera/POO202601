@@ -169,6 +169,15 @@
     <ClInclude Include="include\Circle.h" />
     <ClInclude Include="include\CuentaBancaria.h" />
     <ClInclude Include="include\Estudiante.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Calculadora.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Command.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\ConcreteCommands\ComandoApagar.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\ConcreteCommands\ComandoEncender.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\ControlRemoto.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Luz.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Operacion.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Resta.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Suma.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\Mensaje.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\MensajeApp.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\NotificacionPantalla.h" />

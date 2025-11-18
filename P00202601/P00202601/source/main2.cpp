@@ -1,33 +1,26 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/ChainOfResponsability/ManejadorDirectivo.h"
-#include "ProgrammingPatterns/ChainOfResponsability/ManejadorGerente.h"
-#include "ProgrammingPatterns/ChainOfResponsability/ManejadorDG.h"
-#include "ProgrammingPatterns/ChainOfResponsability/Solicitud.h"
+#include "GameProgrammingPatterns/Command/ControlRemoto.h"
+#include "GameProgrammingPatterns/Command/ComandoEncender.h"
+#include "GameProgrammingPatterns/Command/ComandoApagar.h"
+#include "GameProgrammingPatterns/Command/Luz.h"
+
 
 
 
 int main() {
-	// Crear la cadena de manejadores
-	// ManejadorConcretoC es el último en la cadena, por lo que no tiene siguiente manejador, 
-	// este debe ser primero porque la cadena se crea de atrás hacia adelante
-	ManejadorDG DirectorGeneral(nullptr);
-	ManejadorGerente Gerente(&DirectorGeneral);
-	ManejadorDirectivo Directivo(&Gerente);
-	Solicitud solicitud1(35564.4);
-	Solicitud solicitud2(1354);
-	Solicitud solicitud3(6500.45);
+	// Crear el receptor
+	Luz miLuz;
+	// Crear los comandos, como parametro se le pasa la referencia al receptor
+	ComandoEncender comandoEncender(miLuz);
+	ComandoApagar comandoApagar(miLuz);
 
-	Directivo.manejarPeticion(solicitud1.getMonto());
-	Directivo.manejarPeticion(solicitud2.getMonto());
-	Directivo.manejarPeticion(solicitud3.getMonto());
-
-	std::cout << std::endl;
-	// Peticiones a manejar
-	double peticiones[] = {12301.54, 451.15, 1002.25, 8015.4, 6500.45, 300001.1 };
-	for (double peticion : peticiones) {
-		Directivo.manejarPeticion(peticion);
-	}
-
+	// Crear el invocador
+	ControlRemoto controlRemoto;
+	// Ejecutar comandos a traves del invocador
+	controlRemoto.ejecutarComando(&comandoEncender); // Enciende la luz, se utiliza & para pasar la direccion del comando
+	controlRemoto.ejecutarComando(&comandoApagar);  // Apaga la luz
+	// Deshacer el ultimo comando (apagar la luz)
+	controlRemoto.deshacerUltimoComando();          // Vuelve a encender la luz
 
 
 	return 0;
