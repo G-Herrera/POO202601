@@ -366,6 +366,21 @@
     <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoC.h">
       <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\Solicitud.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorAct.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorDirectivo.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorGerente.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorDG.h">
+      <Filter>Header Files\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">

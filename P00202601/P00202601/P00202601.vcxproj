@@ -223,6 +223,11 @@
     <ClInclude Include="include\ProgrammingPatterns\Builder\DirectorPizza.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Pizza.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Producto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorAct.h" />
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorDG.h" />
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorDirectivo.h" />
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorGerente.h" />
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\Solicitud.h" />
     <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\Manejador.h" />
     <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoA.h" />
     <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoB.h" />
