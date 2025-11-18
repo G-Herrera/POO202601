@@ -417,6 +417,12 @@
     <ClInclude Include="include\GameProgrammingPatterns\Command\Calculadora.h">
       <Filter>Header Files\GameProgrammingPatterns\Command</Filter>
     </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Multiplicacion.h">
+      <Filter>Header Files\GameProgrammingPatterns\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Division.h">
+      <Filter>Header Files\GameProgrammingPatterns\Command</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">

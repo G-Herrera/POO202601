@@ -174,7 +174,9 @@
     <ClInclude Include="include\GameProgrammingPatterns\Command\ConcreteCommands\ComandoApagar.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Command\ConcreteCommands\ComandoEncender.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Command\ControlRemoto.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Division.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Command\Luz.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Multiplicacion.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Command\Operacion.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Command\Resta.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Command\Suma.h" />
