@@ -85,6 +85,9 @@
     <Filter Include="Header Files\GameProgrammingPatterns\Command\Invoker">
       <UniqueIdentifier>{4a7a447f-ef98-4fcc-b9f4-93ca8e24740f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\Flyweight">
+      <UniqueIdentifier>{2bf2556e-9e5c-4cce-9f80-0e33a58f83e5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -422,6 +425,15 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Command\Division.h">
       <Filter>Header Files\GameProgrammingPatterns\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Flyweight\Flyweight.h">
+      <Filter>Header Files\GameProgrammingPatterns\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Flyweight\ConcreteFlyweight.h">
+      <Filter>Header Files\GameProgrammingPatterns\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Flyweight\FlyweightFactory.h">
+      <Filter>Header Files\GameProgrammingPatterns\Flyweight</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

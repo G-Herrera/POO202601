@@ -1,40 +1,32 @@
 #include "Prerequisites.h"
-#include "GameProgrammingPatterns/Command/Calculadora.h"
-#include "GameProgrammingPatterns/Command/Suma.h"
-#include "GameProgrammingPatterns/Command/Resta.h"
-#include "GameProgrammingPatterns/Command/Multiplicacion.h"
-#include "GameProgrammingPatterns/Command/Division.h"
+#include "GameProgrammingPatterns/Flyweight/FlyweightFactory.h"
 
 
 
 
 int main() {
-	int resultado = 0;
-	Suma suma(resultado, 5);
-	Resta resta(resultado, 3);
-	Multiplicacion multi(resultado, 2);
-	Division division(resultado, 5);
+	// Crear la fábrica de Flyweights
+	FlyweightFactory factory;
+	// Crear y usar algunos Flyweights
+	Flyweight* flyweightA = factory.getFlyweight('A');
+	Flyweight* flyweightB = factory.getFlyweight('B');
+	Flyweight* flyweightC = factory.getFlyweight('C');
+	Flyweight* flyweightD = factory.getFlyweight('D');
+	Flyweight* flyweightA2 = factory.getFlyweight('A'); // Debería reutilizar el Flyweight existente
 
-	Calculadora calculadora;
-	calculadora.agregarOperacion(&suma);
-	std::cout << "Resultado despues de la suma: " << resultado << std::endl;
-	//calculadora.deshacerOperacion();
-	//std::cout << "Resultado al deshacer la operacion: " << resultado << std::endl;
+	// Dibujar los Flyweights en diferentes posiciones
+	flyweightA->Draw(10, 20);
+	flyweightB->Draw(30, 40);
+	flyweightC->Draw(50, 60);
+	flyweightD->Draw(70, 80);
+	flyweightA2->Draw(90, 100); // Debería dibujar el mismo símbolo 'A'
 
-	calculadora.agregarOperacion(&resta);
-	std::cout << "Resultado despues de la resta: " << resultado << std::endl;
-	calculadora.deshacerOperacion();
-	std::cout << "Resultado despues de deshacer la resta: " << resultado << std::endl;
-
-	calculadora.agregarOperacion(&multi);
-	std::cout << "Resultado despues de la multiplicacion: " << resultado << std::endl;
-	calculadora.deshacerOperacion();
-	std::cout << "Resultado despues de deshacer la multiplicacion: " << resultado << std::endl;
-
-	calculadora.agregarOperacion(&division);
-	std::cout << "Resultado despues de la division: " << resultado << std::endl;
-	calculadora.deshacerOperacion();
-	std::cout << "Resultado despues de deshacer la division: " << resultado << std::endl;
+	// Limpiar memoria (en un caso real, la fábrica debería manejar esto)
+	delete flyweightA;
+	delete flyweightB;
+	delete flyweightC;
+	delete flyweightD;
+	
 
 	return 0;
 }

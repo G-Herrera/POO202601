@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include <ctime>
+#include <unordered_map>
 /*
 //mi estructura
 struct
