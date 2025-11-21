@@ -88,6 +88,9 @@
     <Filter Include="Header Files\GameProgrammingPatterns\Flyweight">
       <UniqueIdentifier>{2bf2556e-9e5c-4cce-9f80-0e33a58f83e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\State">
+      <UniqueIdentifier>{772961b4-334d-4876-882a-44b2ff63fad3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -434,6 +437,21 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Flyweight\FlyweightFactory.h">
       <Filter>Header Files\GameProgrammingPatterns\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\PlayerState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\NormalState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\Player.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\RageState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\HurtState.h">
+      <Filter>Header Files\GameProgrammingPatterns\State</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

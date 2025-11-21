@@ -192,6 +192,11 @@
     <ClInclude Include="include\GameProgrammingPatterns\Observer\ObserverMessage.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\SensorTemperatura.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\TermometroDigital.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\HurtState.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\NormalState.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\Player.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\PlayerState.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\RageState.h" />
     <ClInclude Include="include\Inventory.h" />
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />
