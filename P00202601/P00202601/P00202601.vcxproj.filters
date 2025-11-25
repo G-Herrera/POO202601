@@ -91,6 +91,9 @@
     <Filter Include="Header Files\GameProgrammingPatterns\State">
       <UniqueIdentifier>{772961b4-334d-4876-882a-44b2ff63fad3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GameProgrammingPatterns\Strategy">
+      <UniqueIdentifier>{7f039dd0-0a7e-444f-8ffb-26633f1a8553}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -452,6 +455,21 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\State\HurtState.h">
       <Filter>Header Files\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\IAttackStrategy.h">
+      <Filter>Header Files\GameProgrammingPatterns\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\RangedAttackStrategy.h">
+      <Filter>Header Files\GameProgrammingPatterns\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\MagicAttackStrategy.h">
+      <Filter>Header Files\GameProgrammingPatterns\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\MeleeAttackStrategy.h">
+      <Filter>Header Files\GameProgrammingPatterns\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\Player.h">
+      <Filter>Header Files\GameProgrammingPatterns\Strategy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -1,33 +1,26 @@
 #include "Prerequisites.h"
-#include "GameProgrammingPatterns/State/Player.h"
-#include "GameProgrammingPatterns/State/NormalState.h"
-#include "GameProgrammingPatterns/State/HurtState.h"
-#include "GameProgrammingPatterns/State/RageState.h"
-
-
-
+#include "GameProgrammingPatterns/Strategy/Player.h"
+#include "GameProgrammingPatterns/Strategy/MeleeAttackStrategy.h"
+#include "GameProgrammingPatterns/Strategy/RangedAttackStrategy.h"
+#include "GameProgrammingPatterns/Strategy/MagicAttackStrategy.h"
 
 int main() {
-	Player* player = new Player();
-	player->Attack();
-	player->Defend();
-	player->Move();
-	std::cout << "Player gets hurt!" << std::endl;
-	player->SetState(new HurtState());
-	player->Attack();
-	player->Defend();
-	player->Move();
-	std::cout << "Player enters rage mode!" << std::endl;
-	player->SetState(new RageState());
-	player->Attack();
-	player->Defend();
-	player->Move();
-	std::cout << "Player calms down to normal state." << std::endl;
-	player->SetState(new NormalState());
-	player->Attack();
-	player->Defend();
-	player->Move();
-	delete player;
+	// Crear un jugador
+	Player player;
+	int baseDamage = 100;
+	// Establecer y usar la estrategia de ataque cuerpo a cuerpo
+	player.setStrategy(std::make_unique<MeleeAttackStrategy>());
+	int meleeDamage = player.attack(baseDamage);
+	std::cout << "Melee Attack Damage: " << meleeDamage << std::endl;
+	// Establecer y usar la estrategia de ataque a distancia
+	player.setStrategy(std::make_unique<RangedAttackStrategy>());
+	int rangedDamage = player.attack(baseDamage);
+	std::cout << "Ranged Attack Damage: " << rangedDamage << std::endl;
+	// Establecer y usar la estrategia de ataque magico
+	player.setStrategy(std::make_unique<MagicAttackStrategy>());
+	int magicDamage = player.attack(baseDamage);
+	std::cout << "Magic Attack Damage: " << magicDamage << std::endl;
+	
 
 	return 0;
 }

@@ -197,6 +197,11 @@
     <ClInclude Include="include\GameProgrammingPatterns\State\Player.h" />
     <ClInclude Include="include\GameProgrammingPatterns\State\PlayerState.h" />
     <ClInclude Include="include\GameProgrammingPatterns\State\RageState.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\IAttackStrategy.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\MagicAttackStrategy.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\MeleeAttackStrategy.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\Player.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Strategy\RangedAttackStrategy.h" />
     <ClInclude Include="include\Inventory.h" />
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />
