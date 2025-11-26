@@ -1,25 +1,19 @@
 #include "Prerequisites.h"
-#include "GameProgrammingPatterns/Strategy/Player.h"
-#include "GameProgrammingPatterns/Strategy/MeleeAttackStrategy.h"
-#include "GameProgrammingPatterns/Strategy/RangedAttackStrategy.h"
-#include "GameProgrammingPatterns/Strategy/MagicAttackStrategy.h"
-
+#include "GameProgrammingPatterns/Facade/AudioFacade.h"
 int main() {
-	// Crear un jugador
-	Player player;
-	int baseDamage = 100;
-	// Establecer y usar la estrategia de ataque cuerpo a cuerpo
-	player.setStrategy(std::make_unique<MeleeAttackStrategy>());
-	int meleeDamage = player.attack(baseDamage);
-	std::cout << "Melee Attack Damage: " << meleeDamage << std::endl;
-	// Establecer y usar la estrategia de ataque a distancia
-	player.setStrategy(std::make_unique<RangedAttackStrategy>());
-	int rangedDamage = player.attack(baseDamage);
-	std::cout << "Ranged Attack Damage: " << rangedDamage << std::endl;
-	// Establecer y usar la estrategia de ataque magico
-	player.setStrategy(std::make_unique<MagicAttackStrategy>());
-	int magicDamage = player.attack(baseDamage);
-	std::cout << "Magic Attack Damage: " << magicDamage << std::endl;
+	// Crear la fachada de audio
+	AudioFacade audioSystem;
+
+	// Inicializar el sistema de audio
+	audioSystem.initialize();
+	// Reproducir musica de fondo
+	audioSystem.playBackgroundMusic("assets/music/background_track.mp3");
+	// Reproducir un efecto de sonido
+	audioSystem.playSfx("assets/sfx/jump.wav");
+	// Ajustar el volumen maestro
+	audioSystem.setMasterVolume(0.5f);
+	// Habilitar el efecto de reverberacion
+	audioSystem.enableReverb(true);
 	
 
 	return 0;

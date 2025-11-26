@@ -180,6 +180,10 @@
     <ClInclude Include="include\GameProgrammingPatterns\Command\Operacion.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Command\Resta.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Command\Suma.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Facade\AudioEffectsProcessor.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Facade\AudioFacade.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Facade\AudioLoader.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Facade\AudioMixer.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Flyweight\ConcreteFlyweight.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Flyweight\Flyweight.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Flyweight\FlyweightFactory.h" />
